@@ -1,5 +1,5 @@
-const CACHE = "nihongo-pop-2026-10-14.2";
-const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png", "./img/scene1.webp", "./img/scene2.webp", "./img/scene3.webp", "./img/scene4.webp", "./img/scene5.webp", "./img/scene6.webp"];
+const CACHE = "nihongo-pop-2026-10-14.3";
+const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png", "./img/scene1.webp", "./img/scene2.webp", "./img/scene3.webp", "./img/scene4.webp", "./img/scene5.webp", "./img/scene6.webp", "./img/u1d2.webp", "./img/u1d3.webp", "./img/u1d4.webp", "./img/u2d2.webp", "./img/u2d3.webp", "./img/u2d4.webp", "./img/u3d2.webp", "./img/u3d3.webp", "./img/u3d4.webp", "./img/u4d2.webp", "./img/u4d3.webp", "./img/u4d4.webp", "./img/u5d2.webp", "./img/u5d3.webp", "./img/u5d4.webp", "./img/u6d2.webp", "./img/u6d3.webp", "./img/u6d4.webp"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
