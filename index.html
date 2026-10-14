@@ -108,7 +108,7 @@ svg.i{width:1em;height:1em;display:inline-block;vertical-align:-.14em;flex:none}
 .hero .tt .k{font-size:12.5px;opacity:.93;margin-top:2px}
 
 .tabs{position:sticky;top:calc(max(8px,env(safe-area-inset-top)) + 48px);z-index:15;display:grid;grid-template-columns:repeat(5,1fr);gap:4px;
-  padding:4px;border-radius:16px;background:var(--surface);margin-bottom:18px}
+  padding:4px;border-radius:16px;background:var(--surface);margin-bottom:18px;box-shadow:0 -14px 0 0 var(--bg),0 6px 0 0 var(--bg)}
 .tab{display:flex;flex-direction:column;align-items:center;gap:1px;padding:7px 0 6px;border-radius:14px;color:var(--ink-2);position:relative;text-align:center}
 .tab .tk{font-family:var(--pop);font-size:15px;line-height:1.2}
 .tab.on .tk{color:#000}
@@ -172,7 +172,7 @@ svg.i{width:1em;height:1em;display:inline-block;vertical-align:-.14em;flex:none}
 /* ── 만화 페이지 ── */
 .comic{position:relative;border-radius:22px;background:var(--surface);overflow:hidden;margin:0 0 12px}
 .comic .panel{position:relative}
-.comic .panel img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 30%}
+.comic .panel img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:50% 30%}
 .comic .panel::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 60%,var(--surface))}
 .ptag{position:absolute;left:12px;top:12px;z-index:2;font-family:var(--head);font-weight:700;font-size:11.5px;color:#000;padding:5px 10px;border-radius:99px;background:var(--lime)!important}
 .chat{display:flex;flex-direction:column;gap:17px;padding:16px 12px 18px;min-height:140px;cursor:pointer}
@@ -617,7 +617,7 @@ function home(){
     </div>
     <button class="vbanner press" id="toVocab"><span class="vi">語</span>
       <span class="vt"><b>단어장</b><small>단어 ${ALLW.length}개 · 외운 단어 ${ALLW.length-due}개</small></span><span class="arr">›</span></button>
-    <p class="offline">오프라인에서도 작동합니다 · v2026-10-14.9</p>`;
+    <p class="offline">오프라인에서도 작동합니다 · v2026-10-15.1</p>`;
   $w.querySelectorAll('.node:not(.lock)').forEach(b=>b.onclick=()=>go({v:'unit',u:+b.dataset.u,tab:'conv',d:0}));
   $w.querySelectorAll('.gtile').forEach(b=>b.onclick=()=>go({v:'game',g:b.dataset.g}));
   document.getElementById('toVocab').onclick=()=>go({v:'vocab'});
