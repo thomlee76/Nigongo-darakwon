@@ -1,5 +1,5 @@
-const CACHE = "nihongo-pop-2026-10-14.4";
-const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png", "./img/u1d1c.webp", "./img/scene2.webp", "./img/scene3.webp", "./img/scene4.webp", "./img/scene5.webp", "./img/scene6.webp", "./img/u1d2c.webp", "./img/u1d3c.webp", "./img/u1d4.webp", "./img/u2d2.webp", "./img/u2d3.webp", "./img/u2d4.webp", "./img/u3d2.webp", "./img/u3d3.webp", "./img/u3d4.webp", "./img/u4d2.webp", "./img/u4d3.webp", "./img/u4d4.webp", "./img/u5d2.webp", "./img/u5d3.webp", "./img/u5d4.webp", "./img/u6d2.webp", "./img/u6d3.webp", "./img/u6d4.webp"];
+const CACHE = "nihongo-pop-2026-10-14.5";
+const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png", "./img/u1d1c.webp", "./img/u1d2c.webp", "./img/u1d3c.webp", "./img/u1d4c.webp", "./img/u2d1c.webp", "./img/u2d2c.webp", "./img/u2d3c.webp", "./img/u2d4c.webp", "./img/u3d1c.webp", "./img/u3d2c.webp", "./img/u3d3c.webp", "./img/u3d4c.webp", "./img/u4d1c.webp", "./img/u4d2c.webp", "./img/u4d3c.webp", "./img/u4d4c.webp", "./img/u5d1c.webp", "./img/u5d2c.webp", "./img/u5d3c.webp", "./img/u5d4c.webp", "./img/u6d1c.webp", "./img/u6d2c.webp", "./img/u6d3c.webp", "./img/u6d4c.webp"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
