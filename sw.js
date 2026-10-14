@@ -1,5 +1,5 @@
-const CACHE = "nihongo-pop-2026-10-14.1";
-const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
+const CACHE = "nihongo-pop-2026-10-14.2";
+const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png", "./img/scene1.webp", "./img/scene2.webp", "./img/scene3.webp", "./img/scene4.webp", "./img/scene5.webp", "./img/scene6.webp"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
